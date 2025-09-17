@@ -62,4 +62,14 @@ public class Members {
             throw new IllegalArgumentException("Balance must be between 0 and 5000");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Members{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }

@@ -47,5 +47,14 @@ public class Recharges {
     public void setDate(String date) {
         this.date = date;
     }
+    @Override
+    public String toString() {
+        return "Recharges{" +
+                "id='" + id + '\'' +
+                ", memberId='" + memberId + '\'' +
+                ", amount=" + amount +
+                ", date='" + date + '\'' +
+                '}';
+    }
    
 }

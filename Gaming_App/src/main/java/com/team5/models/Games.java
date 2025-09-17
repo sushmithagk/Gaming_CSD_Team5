@@ -1,7 +1,5 @@
 package com.team5.models;
 
-
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -10,15 +8,14 @@ public class Games {
 
     @Id
     private String id;
-
     private String name;
     private Double price;
     private String description;
-    private Integer duration;              // duration in minutes
-    private String status;                 // e.g., "active", "inactive"
-    private Integer minPlayerCount;
-    private Integer maxPlayerCount;
-    private Integer playerCountMultiple;
+    // private Integer duration;              // duration in minutes
+    // private String status;                 // e.g., "active", "inactive"
+    // private Integer minPlayerCount;
+    // private Integer maxPlayerCount;
+    // private Integer playerCountMultiple;
 
     // Constructors
     public Games() {}
@@ -29,11 +26,11 @@ public class Games {
         this.name = name;
         this.price = price;
         this.description = description;
-        this.duration = duration;
-        this.status = status;
-        this.minPlayerCount = minPlayerCount;
-        this.maxPlayerCount = maxPlayerCount;
-        this.playerCountMultiple = playerCountMultiple;
+        // this.duration = duration;
+        // this.status = status;
+        // this.minPlayerCount = minPlayerCount;
+        // this.maxPlayerCount = maxPlayerCount;
+        // this.playerCountMultiple = playerCountMultiple;
     }
 
     // Getters and Setters
@@ -69,43 +66,13 @@ public class Games {
         this.description = description;
     }
 
-    public Integer getDuration() {
-        return duration;
-    }
-
-    public void setDuration(Integer duration) {
-        this.duration = duration;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public Integer getMinPlayerCount() {
-        return minPlayerCount;
-    }
-
-    public void setMinPlayerCount(Integer minPlayerCount) {
-        this.minPlayerCount = minPlayerCount;
-    }
-
-    public Integer getMaxPlayerCount() {
-        return maxPlayerCount;
-    }
-
-    public void setMaxPlayerCount(Integer maxPlayerCount) {
-        this.maxPlayerCount = maxPlayerCount;
-    }
-
-    public Integer getPlayerCountMultiple() {
-        return playerCountMultiple;
-    }
-
-    public void setPlayerCountMultiple(Integer playerCountMultiple) {
-        this.playerCountMultiple = playerCountMultiple;
+    @Override
+    public String toString() {
+        return "Games{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                '}';
     }
 }
