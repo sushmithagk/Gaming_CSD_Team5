@@ -55,6 +55,15 @@ public class Transactions {
         this.date = date;
     }
 
-
+    @Override
+    public String toString() {  
+        return "Transactions{" +
+                "id='" + id + '\'' +
+                ", memberId='" + memberId + '\'' +
+                ", gameId='" + gameId + '\'' +
+                ", amount=" + amount +
+                ", date='" + date + '\'' +
+                '}';
+    }
     
 }
